@@ -1,29 +1,20 @@
-﻿<Properties StartupConfiguration="{5C3BB445-2FC7-4F25-8046-C04D8CC83E0E}|Default">
+﻿<Properties StartupConfiguration="{BB8E6C06-7F6F-463C-A0FE-90350F163C4E}|Default">
   <MonoDevelop.Ide.ItemProperties.TravelRecordApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.100af4be7d62513e335276bea589138354f74870" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/NewTravelPage.xaml">
     <Files>
       <File FileName="TravelRecordApp/MainPage.xaml" Line="14" Column="15" />
-      <File FileName="TravelRecordApp/MainPage.xaml.cs" Line="15" Column="4" />
+      <File FileName="TravelRecordApp/HistoryPage.xaml" Line="12" Column="15" />
+      <File FileName="TravelRecordApp/HomePage.xaml" Line="6" Column="71" />
+      <File FileName="TravelRecordApp/NewTravelPage.xaml" Line="6" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TravelRecordApp" expanded="True">
             <Node name="TravelRecordApp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Images" expanded="True" />
-              </Node>
-              <Node name="Helpers" expanded="True" />
-              <Node name="Logic" expanded="True" />
-              <Node name="Model" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
-              </Node>
-              <Node name="MapPage.xaml" expanded="True" />
-              <Node name="NewTravelPage.xaml" expanded="True" />
+              <Node name="NewTravelPage.xaml" selected="True" />
             </Node>
             <Node name="TravelRecordApp.Android" expanded="True" />
-            <Node name="TravelRecordApp.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
