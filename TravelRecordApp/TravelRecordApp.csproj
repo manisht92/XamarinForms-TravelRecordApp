@@ -19,11 +19,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="MaoPage.xaml.cs" />
+    <Compile Remove="Logic\VenueLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Logic\" />
     <Folder Include="Assets\" />
     <Folder Include="Assets\Images\" />
   </ItemGroup>

@@ -9,6 +9,11 @@
                 TextColor="{StaticResource blueColor}" Text="manish@gmail.com" />
         <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="true"
                 TextColor="{StaticResource blueColor}" Text="123456" />
+        <Label Text="Sign Up">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer x:Name="signupTap" Tapped="Handle_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
         <Button x:Name="LoginButton" Text="Log In" Clicked="LoginButton_Clicked" Margin="0,50,0,0" />
     </StackLayout>
 </ContentPage>

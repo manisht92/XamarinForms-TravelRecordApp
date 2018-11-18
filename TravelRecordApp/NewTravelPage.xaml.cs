@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Plugin.Geolocator;
 using SQLite;
-using TravelRecordApp.Logic;
 using TravelRecordApp.Model;
 using Xamarin.Forms;
 using System.Linq;
@@ -11,9 +10,12 @@ namespace TravelRecordApp
 {
     public partial class NewTravelPage : ContentPage
     {
+        Post post;
         public NewTravelPage()
         {
             InitializeComponent();
+            post = new Post();
+            containerStackLayout.BindingContext = post;
         }
 
         protected override async void OnAppearing()
@@ -22,7 +24,7 @@ namespace TravelRecordApp
             var locator = CrossGeolocator.Current;
             var position = await locator.GetPositionAsync();
 
-            var venues = await VenueLogic.GetVenues(position.Latitude, position.Longitude);
+            var venues = await Venue.GetVenues(position.Latitude, position.Longitude);
             venueListView.ItemsSource = venues;
         }
 
@@ -32,27 +34,20 @@ namespace TravelRecordApp
             {
                 var selectedValue = venueListView.SelectedItem as Venue;
                 var firstCategory = selectedValue.categories.FirstOrDefault();
-                Post post = new Post()
-                {
-                    Experience = experienceEntry.Text,
-                    CategoryId = firstCategory.id,
-                    CategoryName = firstCategory.name,
-                    Address = selectedValue.location.address,
-                    Distance = selectedValue.location.distance,
-                    Latitude = selectedValue.location.lat,
-                    Longitude = selectedValue.location.lng,
-                    VanueName = selectedValue.name
 
-                };
-                using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
-                {
-                    conn.CreateTable<Post>();
-                    int rows = conn.Insert(post);
-                    if (rows > 0)
-                        DisplayAlert("Success", "Experience successfully inserted", "Ok");
-                    else
-                        DisplayAlert("Error", "Experience failed to be inserted", "Ok");
-                }
+                post.CategoryId = firstCategory.id;
+                post.CategoryName = firstCategory.name;
+                post.Address = selectedValue.location.address;
+                post.Distance = selectedValue.location.distance;
+                post.Latitude = selectedValue.location.lat;
+                post.Longitude = selectedValue.location.lng;
+                post.VanueName = selectedValue.name;
+
+                int rows = Post.Insert(post);
+                if (rows > 0)
+                    DisplayAlert("Success", "Experience successfully inserted", "Ok");
+                else
+                    DisplayAlert("Error", "Experience failed to be inserted", "Ok");
             }
             catch (NullReferenceException ex)
             {

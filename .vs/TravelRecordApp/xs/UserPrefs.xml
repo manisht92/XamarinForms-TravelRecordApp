@@ -1,21 +1,24 @@
-﻿<Properties StartupConfiguration="{5C3BB445-2FC7-4F25-8046-C04D8CC83E0E}|Default">
+﻿<Properties StartupConfiguration="{BB8E6C06-7F6F-463C-A0FE-90350F163C4E}|Default">
   <MonoDevelop.Ide.ItemProperties.TravelRecordApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.080F0135-E5B8-4117-8F52-51C461798AA4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/ProfilePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/Model/Post.cs">
     <Files>
-      <File FileName="TravelRecordApp/ProfilePage.xaml" Line="14" Column="29" />
-      <File FileName="TravelRecordApp/ProfilePage.xaml.cs" Line="22" Column="48" />
+      <File FileName="TravelRecordApp/Model/Post.cs" Line="119" Column="9" />
+      <File FileName="TravelRecordApp/NewTravelPage.xaml" Line="14" Column="35" />
+      <File FileName="TravelRecordApp/NewTravelPage.xaml.cs" Line="37" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TravelRecordApp" expanded="True">
             <Node name="TravelRecordApp" expanded="True">
-              <Node name="Model" expanded="True" />
-              <Node name="ProfilePage.xaml" expanded="True">
-                <Node name="ProfilePage.xaml.cs" selected="True" />
+              <Node name="Model" expanded="True">
+                <Node name="Post.cs" selected="True" />
               </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="NewTravelPage.xaml" expanded="True" />
+              <Node name="ProfilePage.xaml" expanded="True" />
+              <Node name="RegisterPage.xaml" expanded="True" />
             </Node>
-            <Node name="TravelRecordApp.Android" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -27,5 +30,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TravelRecordApp.Android PreferredExecutionTarget="Android.192.168.57.101:5555" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.TravelRecordApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>
