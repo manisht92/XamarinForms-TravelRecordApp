@@ -1,32 +1,42 @@
 ﻿<Properties StartupConfiguration="{BB8E6C06-7F6F-463C-A0FE-90350F163C4E}|Default">
-  <MonoDevelop.Ide.ItemProperties.TravelRecordApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.080F0135-E5B8-4117-8F52-51C461798AA4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/Model/Post.cs">
+  <MonoDevelop.Ide.ItemProperties.TravelRecordApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C4DA9CBF-170B-441C-AEFF-5F4291F473E6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/ViewModel/MainVM.cs">
     <Files>
-      <File FileName="TravelRecordApp/Model/Post.cs" Line="119" Column="9" />
-      <File FileName="TravelRecordApp/NewTravelPage.xaml" Line="14" Column="35" />
-      <File FileName="TravelRecordApp/NewTravelPage.xaml.cs" Line="37" Column="17" />
+      <File FileName="TravelRecordApp/ViewModel/Commands/LoginCommand.cs" Line="19" Column="1" />
+      <File FileName="TravelRecordApp/ViewModel/MainVM.cs" Line="68" Column="1" />
+      <File FileName="TravelRecordApp/MainPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="TravelRecordApp/MainPage.xaml" Line="11" Column="71" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TravelRecordApp" expanded="True">
             <Node name="TravelRecordApp" expanded="True">
-              <Node name="Model" expanded="True">
-                <Node name="Post.cs" selected="True" />
+              <Node name="ViewModel" expanded="True">
+                <Node name="Commands" expanded="True" />
+                <Node name="MainVM.cs" selected="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="HomePage.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
               <Node name="NewTravelPage.xaml" expanded="True" />
               <Node name="ProfilePage.xaml" expanded="True" />
               <Node name="RegisterPage.xaml" expanded="True" />
             </Node>
+            <Node name="TravelRecordApp.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/manishtiwari/Projects/Manisht92GitHub/XamarinForms-TravelRecordApp/TravelRecordApp/NewTravelPage.xaml.cs" relfile="TravelRecordApp/NewTravelPage.xaml.cs" line="38" column="1" />
+      <Breakpoint file="/Users/manishtiwari/Projects/Manisht92GitHub/XamarinForms-TravelRecordApp/TravelRecordApp/ViewModel/Commands/LoginCommand.cs" relfile="TravelRecordApp/ViewModel/Commands/LoginCommand.cs" line="12" column="1" />
+      <Breakpoint file="/Users/manishtiwari/Projects/Manisht92GitHub/XamarinForms-TravelRecordApp/TravelRecordApp/ViewModel/Commands/LoginCommand.cs" relfile="TravelRecordApp/ViewModel/Commands/LoginCommand.cs" line="19" column="1" />
+      <Breakpoint file="/Users/manishtiwari/Projects/Manisht92GitHub/XamarinForms-TravelRecordApp/TravelRecordApp/ViewModel/Commands/LoginCommand.cs" relfile="TravelRecordApp/ViewModel/Commands/LoginCommand.cs" line="30" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

@@ -6,14 +6,14 @@
         <Image x:Name="iconImage" Aspect="AspectFit" Margin="0,0,0,50"
                 HorizontalOptions="FillAndExpand" />
         <Entry x:Name="emailEntry" Placeholder="Email address"
-                TextColor="{StaticResource blueColor}" Text="manish@gmail.com" />
+                TextColor="{StaticResource blueColor}" Text="{Binding Email, Mode=TwoWay}" />
         <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="true"
-                TextColor="{StaticResource blueColor}" Text="123456" />
+                TextColor="{StaticResource blueColor}" Text="{Binding Password, Mode=TwoWay}" />
         <Label Text="Sign Up">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer x:Name="signupTap" Tapped="Handle_Tapped" />
             </Label.GestureRecognizers>
         </Label>
-        <Button x:Name="LoginButton" Text="Log In" Clicked="LoginButton_Clicked" Margin="0,50,0,0" />
+        <Button x:Name="LoginButton" Text="Log In" Command="{Binding LoginCommand}" CommandParameter="{Binding User}" Margin="0,50,0,0" />
     </StackLayout>
 </ContentPage>

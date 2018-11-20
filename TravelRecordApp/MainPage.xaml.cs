@@ -4,32 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TravelRecordApp.Model;
+using TravelRecordApp.ViewModel;
 using Xamarin.Forms;
 
 namespace TravelRecordApp
 {
     public partial class MainPage : ContentPage
     {
+        public MainVM ViewModel;
         public MainPage()
         {
             InitializeComponent();
 
+            ViewModel = new MainVM();
+            BindingContext = ViewModel;
+
             var assembly = typeof(MainPage);
             iconImage.Source = ImageSource.FromResource("TravelRecordApp.Assets.Images.dicee_logo.png", assembly);
-        }
-
-        void LoginButton_Clicked(object sender, System.EventArgs e)
-        {
-            bool canLogin = User.Login(emailEntry.Text, passwordEntry.Text);
-
-            if (!canLogin)
-            {
-                DisplayAlert("Error", "Try again", "Ok");
-            }
-            else
-            {
-                Navigation.PushAsync(new HomePage());
-            }
         }
 
         void Handle_Tapped(object sender, System.EventArgs e)
