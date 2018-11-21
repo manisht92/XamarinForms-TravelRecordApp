@@ -24,7 +24,7 @@ namespace TravelRecordApp.Model
             set
             {
                 email = value;
-                OnPropertyChanged(email);
+                OnPropertyChanged("Email");
             }
         }
 
@@ -35,7 +35,18 @@ namespace TravelRecordApp.Model
             set
             {
                 password = value;
-                OnPropertyChanged(password);
+                OnPropertyChanged("Password");
+            }
+        }
+
+        private string confirmPassword;
+        public string ConfirmPassword
+        {
+            get { return confirmPassword; }
+            set
+            {
+                confirmPassword = value;
+                OnPropertyChanged("ConfirmPassword");
             }
         }
 

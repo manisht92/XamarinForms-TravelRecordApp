@@ -11,9 +11,10 @@
                 TextColor="{StaticResource blueColor}" Text="{Binding Password, Mode=TwoWay}" />
         <Label Text="Sign Up">
             <Label.GestureRecognizers>
-                <TapGestureRecognizer x:Name="signupTap" Tapped="Handle_Tapped" />
+                <TapGestureRecognizer x:Name="signupTap" Command="{Binding registerNavigationCommand}" />
             </Label.GestureRecognizers>
         </Label>
-        <Button x:Name="LoginButton" Text="Log In" Command="{Binding LoginCommand}" CommandParameter="{Binding User}" Margin="0,50,0,0" />
+        <Button x:Name="LoginButton" Text="Log In" Command="{Binding LoginCommand}"
+                 CommandParameter="{Binding User}" Margin="0,50,0,0" />
     </StackLayout>
 </ContentPage>

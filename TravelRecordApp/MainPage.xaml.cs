@@ -22,10 +22,5 @@ namespace TravelRecordApp
             var assembly = typeof(MainPage);
             iconImage.Source = ImageSource.FromResource("TravelRecordApp.Assets.Images.dicee_logo.png", assembly);
         }
-
-        void Handle_Tapped(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new RegisterPage());
-        }
     }
 }

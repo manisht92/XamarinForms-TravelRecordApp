@@ -19,6 +19,7 @@ namespace TravelRecordApp.ViewModel
         }
 
         public LoginCommand LoginCommand { get; set; }
+        public RegisterNavigationCommand registerNavigationCommand { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -65,6 +66,7 @@ namespace TravelRecordApp.ViewModel
         {
             User = new User();
             LoginCommand = new LoginCommand(this);
+            registerNavigationCommand = new RegisterNavigationCommand(this);
         }
 
         public void Login()
@@ -79,6 +81,11 @@ namespace TravelRecordApp.ViewModel
             {
                 App.Current.MainPage.Navigation.PushAsync(new HomePage());
             }
+        }
+
+        public async void Navigate()
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new RegisterPage());
         }
     }
 }
